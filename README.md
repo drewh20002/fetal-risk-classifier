@@ -1,41 +1,41 @@
 # Fetal Risk Classifier
 
-This project uses supervised machine learning techniques to classify fetal health risks (Normal, Suspect, Pathological) based on cardiotocogram (CTG) data.
+This project builds a machine learning model to classify fetal health risk levels (Normal, Potential Risk, High Risk) using cardiotocogram (CTG) data. The goal is to support midwives and clinical practitioners with an automated, interpretable tool to aid timely decision-making during labour.
 
-## 🔍 Overview
+---
 
-- Built using Python and scikit-learn
-- Trained and evaluated multiple classifiers (Random Forest, XGBoost)
-- Evaluated using F1 score, ROC-AUC, and confusion matrix
-- Visualised key metrics and model performance
-- Aimed to assist with early identification of potential fetal distress
+## Overview
 
-## 📁 Files
+- Models used: Random Forest, XGBoost, Gradient Boosting  
+- Data: 2,126 CTG records with 22 features (clinical measurements and time-series summaries)  
+- Target: Fetal risk classification into three categories  
+- Addressed class imbalance using manual weighting  
+- Performance evaluated via macro F1-score, ROC-AUC, and confusion matrix  
 
-- `fetal_risk_classifier.ipynb`: The main notebook containing data loading, preprocessing, modelling, and evaluation
-- `fetal_health.csv`: Dataset used (from UCI Machine Learning Repository)
+---
 
-## 📊 Dataset
+## Files
 
-- Source: [UCI CTG Dataset](https://archive.ics.uci.edu/ml/datasets/Cardiotocography)
-- Features: 21 physiological signals from CTG
-- Target: Fetal health status (1 = Normal, 2 = Suspect, 3 = Pathological)
+- `fetal_risk_classifier.ipynb`: Complete analysis and modeling pipeline  
+- `fetal_health.csv`: Dataset used  
+- `fetal_risk_classifer.pdf`: Stakeholder-facing project summary  
+- `requirements.txt`: Python package dependencies  
 
-## 🚀 How to Run
+---
 
-1. Clone this repository
-2. Open `fetal_risk_classifier.ipynb` in Jupyter or VSCode
-3. Run the cells from top to bottom
+## Usage
 
-Make sure `fetal_health.csv` is in the same directory as the notebook.
+1. Clone/download repo  
+2. Ensure `fetal_health.csv` is in the same folder as the notebook  
+3. Open and run `fetal_risk_classifier.ipynb` in Jupyter or VSCode  
 
-## ✅ Requirements
+> **Note:** If you don’t need to run the code, you can still open and read the notebook file directly in GitHub’s web interface or via Jupyter to view the analysis, results, and visualizations.
 
-- Python 3.9+
-- pandas, numpy, matplotlib, seaborn
-- scikit-learn
-- xgboost 
+---
 
-Install with:
+## Setup
+
+Install dependencies with:
+
 ```bash
 pip install -r requirements.txt

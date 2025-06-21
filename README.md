@@ -18,7 +18,7 @@ This project builds a machine learning model to classify fetal health risk level
 
 - `fetal_risk_classifier.ipynb`: Complete analysis and modeling pipeline  
 - `fetal_health.csv`: Dataset used  
-- `fetal_risk_classifer.pdf`: Stakeholder-facing project summary  
+- `Document - Fetal Risk Classifer.pdf`: Stakeholder-facing project summary  
 - `requirements.txt`: Python package dependencies  
 
 ---

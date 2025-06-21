@@ -34,7 +34,7 @@ Make sure `fetal_health.csv` is in the same directory as the notebook.
 - Python 3.9+
 - pandas, numpy, matplotlib, seaborn
 - scikit-learn
-- xgboost (optional, depending on your model)
+- xgboost 
 
 Install with:
 ```bash
